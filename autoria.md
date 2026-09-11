@@ -8,7 +8,8 @@
 > con comentarios en el código fuente. La omisión de fuentes puede considerarse plagio.
 
 ## Ejercicio 1
-- Implementación íntegramente propia, sin fuentes externas.
+- Consulte con Claude dudas de letras acerca de dudas entre la relacion de los metodos del main con los del TAD, chat: "https://claude.ai/share/0b56f4ee-a322-46c5-a061-6e25060e9f71"
+- La Implementacion del TAD AVL fue basada inicialmente en el que fue realizado en clase (Semana 2?), luego fue adaptado por mi.
 
 ## Ejercicio 2
 - Implementación íntegramente propia, sin fuentes externas.
