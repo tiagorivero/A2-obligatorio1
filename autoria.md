@@ -8,10 +8,11 @@
 > con comentarios en el código fuente. La omisión de fuentes puede considerarse plagio.
 
 ## Ejercicio 1
-- Consulte con Claude dudas de letras acerca de dudas entre la relacion de los metodos del main con los del TAD, chat: "https://claude.ai/share/0b56f4ee-a322-46c5-a061-6e25060e9f71"
-- La Implementacion del TAD AVL fue basada inicialmente en el que fue realizado en clase (Semana 2?), luego fue adaptado por mi.
+- Consulte con Claude dudas de letras acerca de la relacion de los metodos del main con los del TAD, y me ayudo con la depuracion de mi codigo acerca de errores en las pruebas, chat: "https://claude.ai/share/0b56f4ee-a322-46c5-a061-6e25060e9f71"
+- La Implementacion del TAD AVL fue basada inicialmente en el que fue realizado en clase (Semana 2), luego fue adaptado por mi.
 
 ## Ejercicio 2
+- chat claude:"https://claude.ai/share/0515c931-f95e-49fa-894b-d4e576a5669c"
 - Implementación íntegramente propia, sin fuentes externas.
 
 ## Ejercicio 3

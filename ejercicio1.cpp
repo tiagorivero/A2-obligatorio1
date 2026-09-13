@@ -2,8 +2,8 @@
 #include <string>
 #include <iostream>
 #include <limits>
-#include "tads/AVL.h"
 #include "tads/AVLImp.cpp"
+#include "tads/AVL.h"
 
 using namespace std;
 
@@ -14,7 +14,7 @@ int main()
 
     int num;
     cin >> num;
-    for(int i = 0; i < n; i++){
+    for(int i = 0; i < num; i++){
         string operacion;
         string tipo;
         cin >> operacion >> tipo;
@@ -49,7 +49,7 @@ int main()
                 }
             }
         }
-        else if (operacion == "BUSCAR"){
+        else if (operacion == "RANGO"){
             if(tipo == "M") {
                 int desde;
                 int hasta;
@@ -64,32 +64,5 @@ int main()
         }
     }
     
-
-    while(num > count){
-        cin >> operacion >> tipo >> dato1 >> dato2;
-        if(operacion == "ALTA"){
-            if(tipo == "M"){
-                monedas.insertar(dato1);
-            }else if(tipo == "P"){
-                pinturas.insertar(dato1);
-            }
-        }else if(operacion = "BUSCAR"){
-            if(tipo == "M"){
-                bool pertenece = monedas.pertenece(dato1)
-                monedas.pertenece(dato1) ? cout << "si"; : cout << "no";
-            }else if(tipo == "P"){
-                bool pertenece = pinturas.pertenece(dato1)
-                cout << "si";
-            }
-        }else if(operacion = "RANGO"){
-            if(tipo == "M"){
-                monedas.rango(dato1, dato2)
-            }else if(tipo == "P"){
-                pinturas.rango(dato1, dato2)
-            }
-        }
-    }
-    cout << endl;
-
     return 0;
 }

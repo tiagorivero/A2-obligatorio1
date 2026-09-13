@@ -80,30 +80,59 @@ class AVL{
       }
 
       nodo->altura = 1 + max(getAltura(nodo->izq),getAltura(nodo->der));
-      cout << "Nodo " nodo->dato << endl;
       int balance = getBalance(nodo);
-      cout << "Balance: " balance << endl;
 
       if(balance < -1 && elem < nodo->izq->dato){
         return rotacionDerecha(nodo);
       }
 
       if(balance < -1 && elem > nodo->izq->dato){
-        nodo->izq = rotacionesIzquierda(nodo->izq);
+        nodo->izq = rotacionIzquierda(nodo->izq);
         return rotacionDerecha(nodo);
       }
 
-      if(balance > 1 && elem < nodo->der)
+      if(balance > 1 && elem < nodo->der->dato)
       {
         nodo->der = rotacionDerecha(nodo->der);
-        return rotacionesIzquierda(nodo)
+        return rotacionIzquierda(nodo);
       }
 
       if(balance > 1 && elem > nodo->der->dato){
-        return rotacionesIzquierda(nodo);
+        return rotacionIzquierda(nodo);
       }
 
       return nodo;
+    }
+
+    bool perteneceRec(NodoAVL<T>* nodo, T elem)
+    {
+      if(!nodo){
+        return false;
+      }
+      if(elem == nodo->dato){
+        return true;
+      }
+      if(elem < nodo->dato){
+        return perteneceRec(nodo->izq, elem);
+      }else{
+        return perteneceRec(nodo->der, elem);
+      }
+    }
+
+    void rangoRec(NodoAVL<T>* nodo, T desde, T hasta)
+    {
+      if(!nodo){
+        return;
+      }
+      if(nodo->dato > desde){
+        rangoRec(nodo->izq, desde, hasta);
+      }
+      if(nodo->dato >= desde && nodo->dato <= hasta){
+        cout << nodo->dato << "\n";
+      }
+      if(nodo->dato < hasta){
+        rangoRec(nodo->der, desde, hasta);
+      }
     }
 
   public:
@@ -115,7 +144,16 @@ class AVL{
 
     void insertar(T elem)
     {
-      raiz = insertarRec(raiz,elem)
+      raiz = insertarRec(raiz,elem);
     }
-  
-}
+
+    bool pertenece(T elem)
+    {
+      return perteneceRec(raiz,elem);
+    }
+
+    void rango(T desde,T hasta)
+    {
+      rangoRec(raiz,desde,hasta);
+    }
+};

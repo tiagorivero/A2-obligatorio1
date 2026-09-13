@@ -8,7 +8,7 @@
 > restricciones de órdenes, indicarlo.
 
 ## Ejercicio 1
-- Sin restricciones de órdenes. / Justificación: ...
+- La letra pedia ALTA y BUSCAR en O(log K) y RANGO en O(log K + R), para el TAD use un unico AVL<T> generico, el arbol tiene altura O(log K) por lo que ALTA y BAJA bajan por un solo camino siendo O(1) por nivel, luego como RANGO va cortando las ramas fuera del rango, termina visitando solo los dos caminos de borde más los R que son escritos por consola.
 
 ## Ejercicio 2
 - Sin restricciones de órdenes. / Justificación: ...
