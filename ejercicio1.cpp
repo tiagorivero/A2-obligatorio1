@@ -9,7 +9,7 @@ using namespace std;
 
 int main()
 {
-    AVL<int> monedas;
+    AVL<long long> monedas;
     AVL<string> pinturas;
 
     int num;
@@ -21,7 +21,7 @@ int main()
 
         if(operacion == "ALTA"){
             if(tipo == "M"){
-                int c;
+                long long c;
                 cin >> c;
                 monedas.insertar(c);
             } else if(tipo == "P"){
@@ -32,7 +32,7 @@ int main()
         }
         else if (operacion == "BUSCAR") {
             if (tipo == "M"){
-                int c;
+                long long c;
                 cin >> c;
                 if (monedas.pertenece(c)){
                     cout << "si" << "\n";
@@ -51,8 +51,8 @@ int main()
         }
         else if (operacion == "RANGO"){
             if(tipo == "M") {
-                int desde;
-                int hasta;
+                long long desde;
+                long long hasta;
                 cin >> desde >> hasta;
                 monedas.rango(desde,hasta);
             } else if (tipo == "P"){

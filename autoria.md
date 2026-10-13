@@ -23,7 +23,8 @@ y explicaciones teoricas acerca de los caracteres ASCII, chat: "https://claude.a
 clase (Semana 3) acerca de hash cerrado, luego fue adaptado por mi para que sea un hash abierto.
 
 ## Ejercicio 3
-- Implementación íntegramente propia, sin fuentes externas.
+- La Implementacion del HeapBinario fue la misma que se desarrollo en clase ya que esta estaba muy completa y se adaptaba a lo que se pedia, luego el main si fue implementacion mia, basada en la letra y lo ejemplos de input y output.
+- En este ejercicio no fue necesario el uso de IA, ya que este ejercicio era m'as simple y entendible.
 
 ## Ejercicio 4
 - Implementación íntegramente propia, sin fuentes externas.

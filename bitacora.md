@@ -64,5 +64,14 @@ ordenes y mi decisión sobre el factor de carga.
 - Lei la letra del ejercicio 3.
 - Pendiente: Mañana empezar el ejercicio 3, hoy solo lo lei.
 
-## 2026-09-15 — Tiago Rivero
-- 
+## 2026-10-13 — Tiago Rivero
+- Volvi a leer la letra del ejercicio 3.
+- Basandome en la implentacion utiliza en clase, fui adaptandola a este contexto donde precisamos un min-heap, principalmente en el main ya que la implementacion del heap vista en clase ya estaba bien adapatada.
+- En el Main pedimos N como la cantidad de archivos, cargamos el tamano de cada uno para insertarlos en el heap, luego en el while, mientras que quede más de uno disponible tomamos el tope 2 veces, sumamos sus tamaños y volvemos a insertar esta consolidacion hasta que no queden disponibles.
+- Luego corri las pruebas. En este punto me di cuenta de un error que habia tenido, habia probado solo con las pruebas de la letra, por lo que le pedia a la IA como que hiciera una funcion que me corriera todas las pruebas de estaban en el repo aparte, chat: "https://claude.ai/share/642800ad-095a-4bbc-bfb5-32a8286454af".
+
+- Volvi al ejercicio 1 donde corri las pruebas le pase los errores a claude (chat del ejercicio 1) 
+para que me depurara el codigo, para ayudarme a identificar el error y este fue principalmente el 
+hecho de usar int, ya que algunos valores se pasaban del limite por lo que tuve que usar long long.
+- Corri de nuevo el ejercicio 3 donde volvio a dar error para lo que supuse que era de nuevo lo mismo de que se pasaba el limite.
+- Ademas volvi al ejercicio 2 donde yo en un inicio tome como factor de carga 1 ya que deberia haber como maximo 1 en cada bucket, pero en clase se menciono que el sano era entre 0.5 a 0.7 por lo que cambie la justificacion y el main de este ejercicio donde tambien cambie errores en el manejo de los caracteres.

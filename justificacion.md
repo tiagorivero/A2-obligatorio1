@@ -15,10 +15,10 @@ visitando solo los dos caminos de borde más los R que son escritos por consola.
 
 ## Ejercicio 2
 - La letra pedía tabla de hash abierta con encadenamiento y registrar/consultar una palabra en 
-O(L) promedio, siendo L el largo, obtengo la clave del cajón  contandolas 26 letras de la 
+O(L) promedio, siendo L el largo, obtengo la clave del cajón contando las 26 letras de la 
 palabra en orden O(L) y luego calculo el hash con esa clave siendo O(1), luego dimensiono la 
-tabla con N buckets desde el principio para que el factor de carga se mantenga sano durante 
-todo el proceso, dando el factor de carga λ = N/N = 1 en el peor caso (todas las palabras en 
+tabla con 2N buckets desde el principio para que el factor de carga se mantenga sano durante 
+todo el proceso, dando el factor de carga λ = N/2N = 0.5 en el peor caso (todas las palabras en 
 cajones distintos), sin necesidad de hacer rehash porque N es la cantidad maxima de registros 
 desde el inicio.
 Así la lista de cada bucket tiene el largo esperado O(1) y el costo de memoria no depende de 
@@ -26,7 +26,10 @@ cuántas palabras comparten cajón, luego los valores de cajones distintos y tam
 grande los actualizo en cada registro, así queda en O(1) sin recorrer la tabla.
 
 ## Ejercicio 3
-- Sin restricciones de órdenes. / Justificación: ...
+- La letra pedía O(N log N) usando un heap binario. Use un min-heap donde se insertan la cantidad 
+de archivos N con O(log N) para cada uno, luego en el while, si queda más de uno disponible tomo 
+los dos del tope, sumo sus tamaños y vuelvo a insertar esta consolidacion, terminan siendo N-1 
+consolidaciones cada una con O(log N) por las dos extracciones y la inserción, al final queda O(N log N).
 
 ## Ejercicio 4
 - Sin restricciones de órdenes. / Justificación: ...

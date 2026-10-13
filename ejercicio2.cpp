@@ -20,11 +20,7 @@ bool funcionComparar(string clave1, string clave2){
 }
 
 string nuevaClave (string palabra) {
-    int* conteo = new int[26];
-
-    for (int i = 0; i < 26; i++) {
-        conteo[i] = 0;
-    }
+    int* conteo = new int[26]();
 
     for (int i = 0; i < palabra.length(); i++) {
         char c = palabra[i];
@@ -33,9 +29,8 @@ string nuevaClave (string palabra) {
 
     string clave = "";
     for (int i = 0; i < 26; i++) {
-        if (conteo[i] > 0) {
-            clave += char(('a' + i));
-            clave += char(conteo[i]); 
+        for (int j = 0; j < conteo[i]; j++) {
+            clave += char('a' + i);
         }
     }
 
@@ -51,7 +46,7 @@ int main()
 
     int N;
     cin >> N;
-    HashAbierto<string, int>* tabla = new HashAbierto<string, int>(N, funcionDeHash, funcionComparar);
+    HashAbierto<string, int>* tabla = new HashAbierto<string, int>(2 * N, funcionDeHash, funcionComparar);
 
     for (int i = 0; i < N; i++)
     {
