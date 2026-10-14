@@ -17,6 +17,7 @@ int main()
     int N;
     cin >> N;
     Heap<long long>* heap = new Heap<long long>(N, comparar);
+    
 
     for (int i = 0; i < N; i++) {
         long long tamaño;

@@ -27,7 +27,10 @@ clase (Semana 3) acerca de hash cerrado, luego fue adaptado por mi para que sea 
 - En este ejercicio no fue necesario el uso de IA, ya que este ejercicio era m'as simple y entendible.
 
 ## Ejercicio 4
-- Implementación íntegramente propia, sin fuentes externas.
+- Para la implementacion del Grafo con lista de adyacencia utiliza el mismo que fue utilizado en 
+clase, solamente le agregue el destructor para utilizar luego en el main.
+- El main me resulto mas complejo, por lo que fui probando y depurando junto con Claude y viendo 
+alternativas, principalmente en como manejar la deteccion de ciclos, chat:"https://claude.ai/share/889fd6c8-122c-425c-a380-0959b7557a44".
 
 ## Ejercicio 5
 - Implementación íntegramente propia, sin fuentes externas.

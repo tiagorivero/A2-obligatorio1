@@ -30,9 +30,16 @@ grande los actualizo en cada registro, así queda en O(1) sin recorrer la tabla.
 de archivos N con O(log N) para cada uno, luego en el while, si queda más de uno disponible tomo 
 los dos del tope, sumo sus tamaños y vuelvo a insertar esta consolidacion, terminan siendo N-1 
 consolidaciones cada una con O(log N) por las dos extracciones y la inserción, al final queda O(N log N).
+El heap utiliza un único arreglo de tamaño N+1, cumpliendo con el orden espacial pedido O(N).
 
 ## Ejercicio 4
-- Sin restricciones de órdenes. / Justificación: ...
+- La letra pedía un heap binario, O((V+A) log V) de tiempo. Guardo el grafo con listas de  
+adyacencia y la cantidad de dependencias de cada modulo, luego uso un min-heap por prioridad y por 
+número si empatan, primero compilo los que no tienen dependencias, y al compilar uno le resto 1 a 
+sus adyacentes, si este llega a 0 entra al heap y como cada modulo entra y sale una vez (O(log V)) 
+y cada dependencia se recorre una vez, termina quedando O((V+A) log V) pero si se compilan menos 
+de V modulos eso significa que hay un ciclo.
+Para el orden espacial pedia O(V+A), las listas ocupan O(V+A) y el heap y los arrays O(V).
 
 ## Ejercicio 5
 - Sin restricciones de órdenes. / Justificación: ...
